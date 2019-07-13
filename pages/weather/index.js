@@ -53,13 +53,13 @@ Page({
         if (auth)
           this.getLocation()
         else
-          this.getCityAndWeather() //使用默认城市广州
+          this.getNowWeather() //使用默认城市广州
       },
       fail: () => {
-        this.getCityAndWeather() //使用默认城市广州
+        this.getNowWeather() //使用默认城市广州
       }
     })
-    this.getNowWeather()
+    // this.getNowWeather()
   },
   getNowWeather: function (callBack) {
     wx.request({
