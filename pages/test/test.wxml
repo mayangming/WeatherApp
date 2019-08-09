@@ -1,0 +1,25 @@
+<!--pages/test/test.wxml-->
+<!-- <view class="root">
+文字居中的问题
+  <text class="one">标签一</text>
+  <text class="two text_max_line_1">标签二标签二</text>
+  <text class="three">标签三</text>
+</view> -->
+
+<view class="parent">
+  <!-- 展示了控件重叠的效果 -->
+  <view class="child_top">top</view>
+  <view class="child_1">22222</view>
+  <view class="child">111111</view>
+  <view class="child">111111</view>
+  <view class="child">111111</view>
+</view>
+
+<view class="box">
+    <view class="float">I am a floated box!</view>
+    <view>I am content inside the container.</view>
+</view>
+
+<!-- <view class="parent3">
+    <view class="child3" wx:for="123456">{{item}}</view>
+</view> -->

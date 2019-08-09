@@ -1,0 +1,93 @@
+/* pages/test/test.wxss */
+page{
+  background-image: url(https://www.miaoshoucdn.com/app/images/special_union_describe_bg.png) 
+}
+.root{
+display: flex;
+flex-direction: row;
+}
+
+.two{
+ flex: 1
+}
+
+/* 控制最多显示一行 */
+.text_max_line_1 {
+    display: -webkit-box;     
+    word-break: break-all;
+    text-overflow: ellipsis; 
+    overflow: hidden;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;  
+}
+.parent{
+  padding: 20rpx;
+  width: 50vw;
+  background-color: orangered;
+  display: inline-block;
+  text-align: center;
+}
+.child{
+  background-color: orchid;
+  margin: 10rpx;
+  display: block;
+  text-align: center;
+}
+.child_top{
+  background-color: gray;
+  margin: 10rpx;
+  /* position: absolute; */
+  float: right;
+}
+.child_1{
+    background-color: orchid;
+  margin: 10rpx;
+  display: inline-block;
+  position: relative;
+  right: -50rpx;
+}
+.parent1{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  background-color: orangered;
+}
+
+.child1{
+  margin: 20rpx;
+  background-color: orchid;
+}
+
+.child1_bottom{
+  background-color: green;
+  display: flex;
+  align-items: center;
+}
+.parent3{
+  margin: 20rpx;
+  background-color: oldlace;
+  text-align: center;
+}
+.child3{
+  width: 30%;
+  height: 45vw;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: gainsboro;
+  margin: 10rpx;
+}
+
+.box {
+    background-color: rgb(224, 206, 247);
+    border: 5px solid rebeccapurple;
+}
+
+.float {
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border:1px solid black;
+    padding: 10px;
+}   
