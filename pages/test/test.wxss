@@ -1,0 +1,22 @@
+/* pages/test/test.wxss */
+.parent{
+  display: flex;
+  flex-direction: row;
+}
+.child{
+  background-color: orchid;
+  margin: 20rpx;
+  align-self: flex-start;
+  width: 300rpx;
+  display: flex;
+}
+.child2{
+  background-color: gold;
+  margin-left: 20rpx;
+}
+
+.child3{
+  background-color: red;
+  margin-left: 20rpx;
+  display: flex;
+}

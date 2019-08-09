@@ -1,0 +1,21 @@
+<!--pages/test/test.wxml-->
+<view class="parent">
+  <!-- <icon type="success" class="child" hidden='{{false}}' />
+  <text class="child" hidden='{{true}}'>11111</text>
+  <text class="child" hidden='{{true}}'>2222</text>
+  <text class="child" hidden="{{false}}">333333</text>
+  <text class="child" hidden="{{true}}">4444444444</text> -->
+  <view class="child2">11</view>
+  <view class="child2">22</view>
+  <view class="child2">33</view>
+  <text class="child3">33</text>  
+</view>
+
+
+<view class='mobile'>
+    <text>手机：</text>
+    <view>
+     <input type='number' maxlength='11' bindinput='inputtel' value="{{tel}}" bindblur='blurtel' bindfocus='focustel' placeholder="输入内容"></input>
+     <i class="fa fa-close" catchtap="cleartel"  hidden="0" >这是斜体内容</i>
+    </view>
+   </view>
