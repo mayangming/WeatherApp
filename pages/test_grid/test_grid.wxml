@@ -1,8 +1,16 @@
 <!--pages/test_grid/test_grid.wxml-->
-grid学习
+<!-- grid学习 -->
+
+<!-- <div id="container">
+  <div class="item" wx:for="123456789">{{item}}</div>
+</div> -->
+<!-- <view id="container_flex">
+  <view class="item_flex" wx:for="123456789">{{item}}</view>
+</view> -->
 <span>foo</span>
 <div id="container">
-  <div class="item item-1">1</div>
+  <div class="item item-{{item}}" wx:for="123456789">{{item}}</div>
+  <!-- <div class="item item-1">1</div>
   <div class="item item-2">2</div>
   <div class="item item-3">3</div>
   <div class="item item-4">4</div>
@@ -10,12 +18,12 @@ grid学习
   <div class="item item-6">6</div>
   <div class="item item-7">7</div>
   <div class="item item-8">8</div>
-  <div class="item item-9">9</div>
+  <div class="item item-9">9</div> -->
 </div>
 <span>bar</span>
 
-<view class="grid1">
+<!-- <view class="grid1">
   <view>111</view>
   <view>222</view>
   <view>333</view>
-</view>
+</view> -->
