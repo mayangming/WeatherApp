@@ -6,10 +6,12 @@
 
 .flex_container{
   display: flex;
+  background-color: orangered;
   /** 一行放不下时候换行，默认不换行，然后控件会进行缩放进一行内,因为
   flex-shrink默认为0，否则会溢出边框 */
   flex-flow: wrap;/** 一行放不下时进行换行 */
-  justify-content: center;/** 设置子项目的水平排列方式 */
+  justify-content: center;
+  /** 设置子项目的水平排列方式 */
 }
 .flex_item{
   width: 100px;
@@ -19,4 +21,25 @@
   background-color: orchid;
   justify-content: center;
   align-items: center;
+}
+.last_item{
+  width: 100px;
+  height: 100px;
+  background-color: orchid;
+  margin: 5rpx;
+  flex-grow: 1;
+  /* Firefox */
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+/* Safari, Chrome, and Opera */
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+/* W3C */
+display:box;
+box-pack:center;
+box-align:center;
 }

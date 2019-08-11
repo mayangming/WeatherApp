@@ -4,5 +4,6 @@
 </view> -->
 
 <view class="flex_container">
-  <view class="flex_item" wx:for='abcdef'>{{item}}</view>
+  <view class="flex_item" wx:for='abcde'>{{item}}</view>
+  <view class="last_item">n</view>
 </view>
