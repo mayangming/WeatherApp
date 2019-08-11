@@ -29,6 +29,7 @@ span {
   justify-content: center;
 }
 .item_flex{
+  display: inline-flex;
   width: 100px;
   height: 100px;
   border: 1px solid #e5e4e9;

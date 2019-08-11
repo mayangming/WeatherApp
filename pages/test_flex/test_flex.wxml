@@ -1,0 +1,8 @@
+<!--pages/test_flex/test_flex.wxml-->
+<!-- <view class='grid' wx:for='{{dataList}}' wx:if='{{index%2 === 0}}'>
+  <view wx:for='{{[dataList[index], dataList[index+1]]}}' wx:for-item='dataItem'>{{dataItem}}</view>
+</view> -->
+
+<view class="flex_container">
+  <view class="flex_item" wx:for='abcdef'>{{item}}</view>
+</view>
