@@ -22,7 +22,6 @@ flex-direction: row;
 }
 .parent{
   padding: 20rpx;
-  width: 50vw;
   background-color: orangered;
   display: inline-block;
   text-align: center;
@@ -35,16 +34,16 @@ flex-direction: row;
 }
 .child_top{
   background-color: gray;
-  margin: 10rpx;
+  width: 50rpx;
   /* position: absolute; */
   float: right;
 }
 .child_1{
-    background-color: orchid;
+  background-color: orchid;
   margin: 10rpx;
-  display: inline-block;
-  position: relative;
-  right: -50rpx;
+  /* display: inline-block; */
+  /* position: relative; */
+  /* right: -50rpx; */
 }
 .parent1{
   display: flex;
@@ -56,6 +55,7 @@ flex-direction: row;
 .child1{
   margin: 20rpx;
   background-color: orchid;
+
 }
 
 .child1_bottom{
@@ -81,6 +81,8 @@ flex-direction: row;
 .box {
     background-color: rgb(224, 206, 247);
     border: 5px solid rebeccapurple;
+    display: flow-root;
+    margin-bottom: 20rpx;
 }
 
 .float {
@@ -91,3 +93,23 @@ flex-direction: row;
     border:1px solid black;
     padding: 10px;
 }   
+.float_parent{
+  background-color: orange;
+  width: 80vw;
+  height: 400rpx;
+}
+.float_child1{
+  background-color: green;
+  width: 20vw;
+  height: 200rpx;
+  float: left;
+}
+.float_child2{
+  background-color: orchid;
+  width: 40vw;
+  height: 300rpx;
+}
+.line_h{
+  background-color: navajowhite;
+  
+}

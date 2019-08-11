@@ -1,24 +1,24 @@
 <!--pages/test/test.wxml-->
-<view class="parent">
+<!-- <view class="parent">
   <!-- <icon type="success" class="child" hidden='{{false}}' />
   <text class="child" hidden='{{true}}'>11111</text>
   <text class="child" hidden='{{true}}'>2222</text>
   <text class="child" hidden="{{false}}">333333</text>
-  <text class="child" hidden="{{true}}">4444444444</text> -->
-  <view class="child2">11</view>
-  <view class="child2">22</view>
-  <view class="child2">33</view>
-  <text class="child3">33</text>  
-</view>
+  <text class="child" hidden="{{true}}">4444444444</text>
+<view class="child2">11</view>
+<view class="child2">22</view>
+<view class="child2">33</view>
+<text class="child3">33</text>
+</view> -->
 
 
-<view class='mobile'>
-    <text>手机：</text>
-    <view>
-     <input type='number' maxlength='11' bindinput='inputtel' value="{{tel}}" bindblur='blurtel' bindfocus='focustel' placeholder="输入内容"></input>
-     <i class="fa fa-close" catchtap="cleartel"  hidden="0" >这是斜体内容</i>
-    </view>
-   </view>
+<!-- <view class='mobile'>
+  <text>手机：</text>
+  <view>
+    <input type='number' maxlength='11' bindinput='inputtel' value="{{tel}}" bindblur='blurtel' bindfocus='focustel' placeholder="输入内容"></input>
+    <i class="fa fa-close" catchtap="cleartel" hidden="0">这是斜体内容</i>
+  </view>
+</view> -->
 <!-- <view class="root">
 文字居中的问题
   <text class="one">标签一</text>
@@ -26,20 +26,31 @@
   <text class="three">标签三</text>
 </view> -->
 
-<view class="parent">
-  <!-- 展示了控件重叠的效果 -->
+<!-- <view class="parent">
+   展示了控件重叠的效果
   <view class="child_top">top</view>
   <view class="child_1">22222</view>
   <view class="child">111111</view>
   <view class="child">111111</view>
   <view class="child">111111</view>
-</view>
+</view> -->
 
-<view class="box">
-    <view class="float">I am a floated box!</view>
-    <view>I am content inside the container.</view>
-</view>
+<!-- <view class="box">
+  <image class="float"></image>
+  <view>I am content inside the container.</view>
+</view> -->
 
 <!-- <view class="parent3">
     <view class="child3" wx:for="123456">{{item}}</view>
+</view> -->
+<!-- 浮动布局结论：
+1、浮动脱离文档流
+2、浮动的内容与其它控件并不会重叠(包装组件除外，例如View)
+3、浮动组件会占用同一行显示的其它组件的文字空间或者图片空间，其它控件会进行相应偏移
+4、假如该行空间位置不足的话，浮动组件会位于另一个控件的上面一行显示 -->
+<!-- <view class="float_parent">
+浮动的研究
+  <view class="float_child1"></view>
+  <view class="float_child2"></view>
+  <view class="line_h">窗前明月光，疑是地上霜。举头望明月，低头思故乡</view>
 </view> -->
