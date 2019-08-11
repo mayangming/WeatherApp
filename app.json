@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/test_grid/test_grid"
   ],
   "window": {
     "backgroundTextStyle": "dark",
