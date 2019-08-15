@@ -75,4 +75,5 @@ span {
   display: grid;
   grid-template-columns: 100rpx auto 100rpx;
   justify-items: center;
+  /* visibility: visible;* 隐藏但是占据位置，所以可以测量出组件的坐标和宽高 */
 }
