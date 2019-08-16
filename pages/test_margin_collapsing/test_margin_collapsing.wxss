@@ -1,0 +1,21 @@
+/* pages/test_margin_collapsing/test_margin_collapsing.wxss */
+.parent{
+  width: 50vw;
+  height: 50vh;
+  background-color: orchid;
+  display: flex;
+  flex-direction: column;
+}
+.child1{
+  width: 50vw;
+  height: 200rpx;
+  background-color: orange;
+  margin-bottom: 10rpx;
+}
+
+.child2{
+  width: 50vw;
+  height: 200rpx;
+  background-color: orange;
+  margin-top: 10rpx;
+}

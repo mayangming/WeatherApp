@@ -1,0 +1,7 @@
+<!--pages/test_margin_collapsing/test_margin_collapsing.wxml-->
+外边距合并
+
+<view class="parent">
+  <view class="child1"></view>
+  <view class="child2"></view>
+</view>
