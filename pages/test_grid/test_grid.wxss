@@ -15,6 +15,8 @@ span {
   padding: 10rpx;
 }
 #container_flex{
+  background-color: orchid;
+  /* height: 1000rpx; */
   display: flex;
   margin-top: 10rpx;
   justify-content: center;  /**水平居中 */
@@ -76,4 +78,9 @@ span {
   grid-template-columns: 100rpx auto 100rpx;
   justify-items: center;
   /* visibility: visible;* 隐藏但是占据位置，所以可以测量出组件的坐标和宽高 */
+}
+.block{
+  background-color: orchid;
+  width: 100rpx;
+  height: 100rpx;
 }
