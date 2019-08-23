@@ -1,4 +1,5 @@
 // pages/test/test.js
+// import debounce from '../../utils/debounce.js';
 Page({
 
   /**
@@ -31,6 +32,51 @@ Page({
       console.log('不为空')
     }else{
       console.log('为空')
+    }
+
+    let [a,b,c] = [1,2,3]
+
+    console.log('b',b);
+
+    let q = 1,w = 2;
+    console.log('w', w);
+    var time
+    // 函数防抖
+    // function debounce(func, wait) {
+    //   //参考代码 https://developers.weixin.qq.com/community/develop/article/doc/0006c092ea80589a6a480836251813
+    //   // return () => {
+    //   //   clearTimeout(time);
+
+    //   //   time = setTimeout(func, wait);
+
+    //   // };
+    //   console.log('YM1111')
+    //   // time && clearTimeout(time);
+    //   // time = setTimeout(func, wait);
+    // }
+    var i = 1
+    var timer = setInterval(testdoun, 300)
+  
+    function testdoun(){
+      i++;
+      console.log('YM---',i)
+      if (i == 5) {
+        clearInterval(timer)
+      }
+      
+      // debounce(ma, 500)()
+      tete(ma, 500,i)
+    }
+    function ma(item){
+      console.log('--------', item)
+    }
+    function tete(func, wait,...values){
+      console.log('YM_arguments', values)
+      var context = this;
+      time && clearTimeout(time);
+      time = setTimeout(function () {
+        func.apply(context, values);
+      }, wait);
     }
   },
 
