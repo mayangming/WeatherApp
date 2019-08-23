@@ -1,5 +1,5 @@
 // pages/test/test.js
-// import debounce from '../../utils/debounce.js';
+import debounce from '../../utils/debounce.js';
 Page({
 
   /**
@@ -41,19 +41,6 @@ Page({
     let q = 1,w = 2;
     console.log('w', w);
     var time
-    // 函数防抖
-    // function debounce(func, wait) {
-    //   //参考代码 https://developers.weixin.qq.com/community/develop/article/doc/0006c092ea80589a6a480836251813
-    //   // return () => {
-    //   //   clearTimeout(time);
-
-    //   //   time = setTimeout(func, wait);
-
-    //   // };
-    //   console.log('YM1111')
-    //   // time && clearTimeout(time);
-    //   // time = setTimeout(func, wait);
-    // }
     var i = 1
     var timer = setInterval(testdoun, 300)
   
@@ -91,9 +78,28 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    // 微信参考代码 https://developers.weixin.qq.com/community/develop/doc/0002c892fb80a8326bf70f56d5bc04?highLine=%25E5%2587%25BD%25E6%2595%25B0%25E9%2598%25B2%25E6%258A%2596
+    var i = 1
+    var timer = setInterval(testdoun, 300)
+    var that = this;
+    function testdoun() {
+      i++;
+      console.log('YM---', i)
+      if (i == 5) {
+        clearInterval(timer)
+      }
 
+      that.test(i)
+    }
   },
-
+  /** 函数防抖动 */
+  test: debounce(e => {
+    console.log('e', e)
+  }, 1000, {
+      leading: false,
+      trailing: true
+    }),
+  /**
   /**
    * 生命周期函数--监听页面隐藏
    */
