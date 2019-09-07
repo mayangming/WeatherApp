@@ -1,10 +1,6 @@
-// pages/test/test.js
-<<<<<<< HEAD
 var items = [1, 2, 3, 4, 5, 6];
 var results = [];
-=======
 import debounce from '../../utils/debounce.js';
->>>>>>> 57b60b10c46a38098a26ed550d57fe7ad9bc6b4a
 Page({
 
   /**
@@ -39,8 +35,6 @@ Page({
       console.log('为空')
     }
 
-<<<<<<< HEAD
-
 
     this.series(items.shift());
   },
@@ -51,7 +45,6 @@ Page({
     setTimeout(function() {
       callback(arg * 2);
     }, 1000);
-=======
     let [a,b,c] = [1,2,3]
 
     console.log('b',b);
@@ -83,7 +76,6 @@ Page({
         func.apply(context, values);
       }, wait);
     }
->>>>>>> 57b60b10c46a38098a26ed550d57fe7ad9bc6b4a
   },
 
   final: function(value) {
@@ -114,10 +106,6 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-<<<<<<< HEAD
-  onShow: function() {
-
-=======
   onShow: function () {
     // 微信参考代码 https://developers.weixin.qq.com/community/develop/doc/0002c892fb80a8326bf70f56d5bc04?highLine=%25E5%2587%25BD%25E6%2595%25B0%25E9%2598%25B2%25E6%258A%2596
     var i = 1
@@ -132,7 +120,6 @@ Page({
 
       that.test(i)
     }
->>>>>>> 57b60b10c46a38098a26ed550d57fe7ad9bc6b4a
   },
   /** 函数防抖动 */
   test: debounce(e => {
