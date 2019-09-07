@@ -40,7 +40,11 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 7,
+=======
+			"current": 5,
+>>>>>>> 57b60b10c46a38098a26ed550d57fe7ad9bc6b4a
 			"list": [
 				{
 					"id": -1,
@@ -79,6 +83,7 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "测试方法",
 					"pathName": "pages/test/test",
 					"query": "",
@@ -95,6 +100,10 @@
 					"id": -1,
 					"name": "对象的测试",
 					"pathName": "pages/test_obj/test_obj",
+=======
+					"name": "外边距合并",
+					"pathName": "pages/test_margin_collapsing/test_margin_collapsing",
+>>>>>>> 57b60b10c46a38098a26ed550d57fe7ad9bc6b4a
 					"scene": null
 				}
 			]

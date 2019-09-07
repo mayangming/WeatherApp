@@ -7,9 +7,13 @@
     "pages/test/test",
     "pages/test_grid/test_grid",
     "pages/test_flex/test_flex",
+<<<<<<< HEAD
     "pages/test_cantacts_list/test_cantacts_list",
     "pages/test_sticky/test_sticky",
     "pages/test_obj/test_obj"
+=======
+    "pages/test_margin_collapsing/test_margin_collapsing"
+>>>>>>> 57b60b10c46a38098a26ed550d57fe7ad9bc6b4a
   ],
   "window": {
     "backgroundTextStyle": "dark",
