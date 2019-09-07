@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -74,6 +74,27 @@
 					"id": -1,
 					"name": "Flex学习",
 					"pathName": "pages/test_flex/test_flex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试方法",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "粘性布局的使用",
+					"pathName": "pages/test_sticky/test_sticky",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "对象的测试",
+					"pathName": "pages/test_obj/test_obj",
 					"scene": null
 				}
 			]

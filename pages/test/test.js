@@ -1,13 +1,15 @@
 // pages/test/test.js
+var items = [1, 2, 3, 4, 5, 6];
+var results = [];
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value1:'1',
+    value1: '1',
     value2: null,
-    message:{
+    message: {
       name: 'YM'
     }
   },
@@ -15,71 +17,101 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-      this.setData({
-          'message.name' : 'change'
-      })
+  onLoad: function(options) {
+    this.setData({
+      'message.name': 'change'
+    })
 
     var t1 = '0'
     var t2 = '1'
     var t3 = t2 == '1' ? '首诊免费' : t1 == '0' ? '免费' : 66
-    console.log('YM',t3)
+    console.log('YM', t3)
 
     var ar = [];
-    
-    if(ar.length > 0){
+
+    if (ar.length > 0) {
       console.log('不为空')
-    }else{
+    } else {
       console.log('为空')
     }
+
+
+
+    this.series(items.shift());
   },
+
+
+  asyncT: function(arg, callback) {
+    console.log('参数为 ' + arg + ' , 1秒后返回结果');
+    setTimeout(function() {
+      callback(arg * 2);
+    }, 1000);
+  },
+
+  final: function(value) {
+    console.log('完成: ', value);
+  },
+
+  series: function(item) {
+    var that = this;
+    console.log('开始: ');
+    if (item) {
+      this.asyncT(item, function(result) {
+        results.push(result);
+        return that.series(items.shift());
+      });
+    } else {
+      return this.final(results[results.length - 1]);
+    }
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

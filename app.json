@@ -6,7 +6,10 @@
     "pages/list/list",
     "pages/test/test",
     "pages/test_grid/test_grid",
-    "pages/test_flex/test_flex"
+    "pages/test_flex/test_flex",
+    "pages/test_cantacts_list/test_cantacts_list",
+    "pages/test_sticky/test_sticky",
+    "pages/test_obj/test_obj"
   ],
   "window": {
     "backgroundTextStyle": "dark",

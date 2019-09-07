@@ -23,7 +23,7 @@
   align-items: center;
 }
 .last_item{
-  width: 100px;
+  /* width: 100px; */
   height: 100px;
   background-color: orchid;
   margin: 5rpx;
@@ -34,12 +34,12 @@ display:-moz-box;
 -moz-box-align:center;
 
 /* Safari, Chrome, and Opera */
-display:-webkit-box;
+/* display:-webkit-box;
 -webkit-box-pack:center;
--webkit-box-align:center;
-
+-webkit-box-align:center; */
 /* W3C */
 display:box;
 box-pack:center;
 box-align:center;
+
 }

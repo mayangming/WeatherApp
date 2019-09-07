@@ -1,0 +1,11 @@
+<!--pages/test_sticky/test_sticky.wxml-->
+11111111111
+<div class="con">
+  <div class="samecon" wx:for="{{contacts}}">
+    <view class="title" id="{{item.title}}">{{item.title}}</view>
+    <view wx:for="{{item.names}}">{{item}}</view>
+  </div>
+</div>
+<view class="contact_title_list">
+  <view class="title_item {{index == checkIndex ? 'title_select' : ''}}" wx:for="{{titles}}">{{item}}</view>
+</view>

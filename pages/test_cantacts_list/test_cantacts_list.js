@@ -1,11 +1,11 @@
-// pages/test_flex/test_flex.js
+// pages/test_cantacts_list/test_cantacts_list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    dataList: ['a', 'b', 'c', 'd', 'e', 'f']
+
   },
 
   /**
@@ -26,6 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
   },
 
   /**
@@ -61,5 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
+  }
 })
