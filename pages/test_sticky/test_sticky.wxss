@@ -1,0 +1,22 @@
+/* pages/test_sticky/test_sticky.wxss */
+.samecon .title{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background:#ccc;
+    padding:10px 0;
+}
+.contact_title_list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 25%;
+  right: 10rpx;
+  background-color: orange;
+}
+.title_item{
+  padding: 10rpx;
+}
+.title_select{
+  background-color: oldlace;
+}

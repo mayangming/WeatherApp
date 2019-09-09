@@ -79,6 +79,22 @@
 				},
 				{
 					"id": -1,
+					"name": "测试方法",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "粘性布局的使用",
+					"pathName": "pages/test_sticky/test_sticky",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "对象的测试",
+					"pathName": "pages/test_obj/test_obj",
 					"name": "外边距合并",
 					"pathName": "pages/test_margin_collapsing/test_margin_collapsing",
 					"query": "",
