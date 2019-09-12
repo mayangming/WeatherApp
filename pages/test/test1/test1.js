@@ -1,9 +1,10 @@
 // pages/test1/test1.js
 var timerId = -1;
-function timeOut(){
-  return setTimeout((a,b) => {
-    console.log('---', a + b);
-  }, 1000, 1, 1);
+
+function timeOut() {
+  return setTimeout(() => {
+    console.log('---');
+  }, 1000);
 }
 
 Page({
@@ -16,9 +17,9 @@ Page({
   },
 
   /** 对象的拓展 */
-  objExpand: function(){
+  objExpand: function() {
     // 清除两边的空格  
-    String.prototype.ma = function () {
+    String.prototype.ma = function() {
       return this.replace(/(^\s*)|(\s*$)/g, '');
     };
 
@@ -27,14 +28,15 @@ Page({
   },
 
   /** 解构的使用 */
-  deconstruction: function(){
+  deconstruction: function() {
     var user = {
       name: 'ym',
       age: 18
     }
 
     let {} = user
-    console.log('YM_解构',temp)
+    setTimeout()
+    // console.log('YM_解构',temp)
     // let { foo: t, bar: s } = { foo: 'aaa', bar: 'bbb' };
     // console.log('YM_foo',t);
     // console.log('YM_bar', s);
@@ -42,7 +44,7 @@ Page({
 
 
   /** 延时测试 */
-  timeOut: function(){
+  timeOut: function() {
     if (timerId > 0) {
       var temp = clearTimeout(timerId);
       console.log('YM_取消定时器', timerId)
@@ -54,88 +56,95 @@ Page({
   },
 
   /** 对象的继承 */
-  classExtendTest: function(){
+  classExtendTest: function() {
 
-      function Parent(){
+    function Parent() {
 
-      }
+    }
 
-      function Child(){
-      }
-    Parent.prototype.p =function(){
+    function Child() {}
+    Parent.prototype.p = function() {
       console.log('YM_父组件')
     }
     Child.prototype = Object.create(Parent.prototype);
     Child.prototype.constructor = Child;
-    Child.prototype.c = function(){
+    Child.prototype.c = function() {
       console.log('YM_子组件')
     }
     var childTest = new Child();
     childTest.c();
     var cName = childTest.constructor.name;
-    console.log('YM_构造方法名字',cName)
+    console.log('YM_构造方法名字', cName)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    this.classExtendTest();
+  onLoad: function(options) {
+    // this.classExtendTest();
     // this.deconstruction()
     // setInterval(this.timeOut, 3000)
 
-    var id = setTimeout(function (){
-      console.log('延迟方法')
-    },2000);
-    console.log('id',id)
+    // var id = setTimeout(function (){
+    //   console.log('延迟方法')
+    // },2000);
+    // console.log('id',id)
+
+    var debug = false;
+
+    var obj = {
+        appId: debug ? '1' : '2'
+    }
+
+    console.log('YM_获取appId',obj.appId)
   },
-  
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

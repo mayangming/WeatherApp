@@ -9,8 +9,17 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
-		"checkInvalidKey": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
@@ -40,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -57,60 +66,51 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "测试",
-					"pathName": "pages/test/test",
+					"id": 2,
+					"name": "pages/test/test1/test1",
+					"pathName": "pages/test/test1/test1",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "grid学习",
-					"pathName": "pages/test_grid/test_grid",
+					"pathName": "pages/test/test_grid/test_grid",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "Flex学习",
-					"pathName": "pages/test_flex/test_flex",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "测试方法",
-					"pathName": "pages/test/test",
+					"pathName": "pages/test/test_flex/test_flex",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "粘性布局的使用",
-					"pathName": "pages/test_sticky/test_sticky",
+					"pathName": "pages/test/test_sticky/test_sticky",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "对象的测试",
-					"pathName": "pages/test_obj/test_obj",
 					"name": "外边距合并",
-					"pathName": "pages/test_margin_collapsing/test_margin_collapsing",
+					"pathName": "pages/test/test_margin_collapsing/test_margin_collapsing",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": 6,
 					"name": "函数防抖",
-					"pathName": "pages/test/test",
+					"pathName": "pages/test/test_font/test",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "对象拓展",
-					"pathName": "pages/test1/test1",
+					"pathName": "pages/test/test1/test1",
 					"query": "",
 					"scene": null
 				}

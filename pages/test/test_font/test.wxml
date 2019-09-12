@@ -1,4 +1,4 @@
-<!--pages/test/test.wxml-->
+<!--pages/test_font/test_font.wxml-->
 <!-- <view class="parent">
   <!-- <icon type="success" class="child" hidden='{{false}}' />
   <text class="child" hidden='{{true}}'>11111</text>

@@ -1,4 +1,4 @@
-/* pages/test/test.wxss */
+/* pages/test_font/test_font.wxss */
 page{
   background-image: url(https://www.miaoshoucdn.com/app/images/special_union_describe_bg.png) 
 }

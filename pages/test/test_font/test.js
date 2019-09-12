@@ -1,6 +1,6 @@
 var items = [1, 2, 3, 4, 5, 6];
 var results = [];
-import debounce from '../../utils/debounce.js';
+import debounce from '../../../utils/debounce.js';
 
 Page({
 
