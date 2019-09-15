@@ -4,13 +4,14 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
-    "pages/test/test",
-    "pages/test_grid/test_grid",
-    "pages/test_flex/test_flex",
-    "pages/test_cantacts_list/test_cantacts_list",
-    "pages/test_sticky/test_sticky",
-    "pages/test_obj/test_obj",
-    "pages/test_margin_collapsing/test_margin_collapsing"
+    "pages/test/test_font/test",
+    "pages/test/test1/test1",
+    "pages/test/test_grid/test_grid",
+    "pages/test/test_flex/test_flex",
+    "pages/test/test_cantacts_list/test_cantacts_list",
+    "pages/test/test_sticky/test_sticky",
+    "pages/test/test_obj/test_obj",
+    "pages/test/test_margin_collapsing/test_margin_collapsing"
   ],
   "window": {
     "backgroundTextStyle": "dark",

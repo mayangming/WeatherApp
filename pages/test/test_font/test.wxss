@@ -1,4 +1,4 @@
-/* pages/test/test.wxss */
+/* pages/test_font/test_font.wxss */
 page{
   background-image: url(https://www.miaoshoucdn.com/app/images/special_union_describe_bg.png) 
 }
@@ -10,7 +10,10 @@ flex-direction: row;
 .two{
  flex: 1
 }
-
+.clamp{
+  width: 500rpx;
+  white-space: normal;
+}
 /* 控制最多显示一行 */
 .text_max_line_1 {
     display: -webkit-box;     
@@ -112,4 +115,13 @@ flex-direction: row;
 .line_h{
   background-color: navajowhite;
   
+}
+.root{
+  height: 300rpx;
+}
+.item{
+  width: 500rpx;
+  height: 100rpx;
+  display: block;
+  background-color: orchid;
 }
