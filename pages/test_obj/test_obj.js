@@ -68,12 +68,65 @@ Page({
 
   },
 
+  forTest: function(){
+    var obj = {
+      a:'1',
+      b:'2'
+    }
+    let arr2 = ['c', 'd'];
+    var t = ['a', 'b'].concat(arr2, 'e') // ['a', 'b', ['c','d'], 'e']
+    console.log('YM_展开',t)
+    const x = {};
+    x[Symbol.replace] = (...s) => console.log(s);
+
+    'Hello'.replace(x, 'World') // ["Hello", "World"]
+    // for(let a in obj){
+      
+    // }
+  },  
+  asyTest: function(){
+    const asyncIterable = () => ['a', 'b'];
+    const asyncIterator = asyncIterable[Symbol.asyncIterator]();
+
+    asyncIterator
+      .next()
+      .then(iterResult1 => {
+        console.log(iterResult1); // { value: 'a', done: false }
+        return asyncIterator.next();
+      })
+      .then(iterResult2 => {
+        console.log(iterResult2); // { value: 'b', done: false }
+        return asyncIterator.next();
+      })
+      .then(iterResult3 => {
+        console.log(iterResult3); // { value: undefined, done: true }
+      });
+  },
+
+  iterator: function(){
+    let arr = ['a', 'b', 'c'];
+    let iter = arr[Symbol.iterator]();
+    // console.log('YM_', iter.next())
+
+    for (let i of iter){
+      console.log('YM_循环',i)
+    }
+
+     // { value: 'a', done: false }
+    // iter.next() // { value: 'b', done: false }
+    // iter.next() // { value: 'c', done: false }
+    // iter.next() // { value: undefined, done: true }
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     // this.objExtends()
-    this.thisSwitchBind()
+    // this.thisSwitchBind()
+    // this.forTest()
+    // this.asyTest()
+    this.iterator()
   },
 
   /**

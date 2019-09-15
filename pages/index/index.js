@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var asd1 = 1;
 Page({
   data: {
     motto: 'Hello World',
@@ -15,6 +16,7 @@ Page({
     })
   },
   onLoad: function () {
+      
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
