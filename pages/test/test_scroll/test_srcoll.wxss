@@ -1,0 +1,26 @@
+/* pages/test/test_scroll/test_srcoll.wxss */
+.root{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.lable{
+  background-color: orchid;
+  padding: 20rpx;
+  flex-shrink: 0;
+}
+
+.content{
+  flex:1;
+}
+.scroll{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.item{
+  height: 200rpx;
+}

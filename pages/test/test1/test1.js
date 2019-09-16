@@ -7,6 +7,34 @@ function timeOut() {
   }, 1000);
 }
 
+import {
+  importTest as a, TimerOut
+} from '../../../utils/util.js'
+
+
+function print(value,as) {
+  console.log('YM_打印日志', value,as)
+}
+
+
+// const TimerOut = {};
+// TimerOut.timer = null;
+// TimerOut.timeOut = (func) => {
+//   var timer = TimerOut.timer;
+//   timer && clearTimeout(timer);
+//   timer = null;
+//   timer = setTimeout(func, 1000 * 3);
+//   TimerOut.timer = timer;
+// }
+// TimerOut.timeOut(print)
+// TimerOut.timeOut(print)
+
+function print(value1, value2) {
+  console.log('YM_打印日志', value1, value2)
+}
+TimerOut.timeOut(print, 1000, [1, 2]) // YM_打印日志 1 2
+TimerOut.cancelTimer()
+
 Page({
 
   /**
@@ -119,10 +147,18 @@ Page({
     var debug = false;
 
     var obj = {
-        appId: debug ? '1' : '2'
+      appId: debug ? '1' : '2'
     }
 
-    console.log('YM_获取appId',obj.appId)
+    console.log('YM_获取appId', obj.appId)
+    a()
+
+    function test(a,b){
+      console.log('YM_计时器',a,b)
+    }
+
+    setTimeout(test, 1000, ...[1, 2])
+
   },
 
   /**

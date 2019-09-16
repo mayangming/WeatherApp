@@ -61,4 +61,4 @@
 <image style="height:100rpx;width:100rpx;" src="../../images/test1.jpg"></image>
 <image style="height:500rpx;width:500rpx;" src="../../images/test2.gif"></image>
 
-<cover-view class="clamp text_max_line_1">窗前明月光，疑是地上霜。举头望明月，低头思故乡窗前明月光，疑是地上霜。举头望明月，低头思故乡</cover-view>
+<cover-view class="clamp">窗前明月光，疑是地上霜。举头望明月，低头思故乡窗前明月光，疑是地上霜。举头望明月，低头思故乡</cover-view>

@@ -11,7 +11,8 @@
     "pages/test/test_cantacts_list/test_cantacts_list",
     "pages/test/test_sticky/test_sticky",
     "pages/test/test_obj/test_obj",
-    "pages/test/test_margin_collapsing/test_margin_collapsing"
+    "pages/test/test_margin_collapsing/test_margin_collapsing",
+    "pages/test/test_scroll/test_srcoll"
   ],
   "window": {
     "backgroundTextStyle": "dark",

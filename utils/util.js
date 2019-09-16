@@ -14,6 +14,27 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function importTest(){
+  console.log('YM__导入成功')
+}
+class TimerOut {
+  static timer = null
+  static timeOut(func, wait, args) {
+    var timer = TimerOut.timer;
+    timer && clearTimeout(timer);
+    timer = null;
+    timer = setTimeout(func, wait, ...args);
+    TimerOut.timer = timer;
+  }
+
+  static cancelTimer() {
+    var timer = TimerOut.timer;
+    timer && clearTimeout(timer);
+  }
+
+}
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  importTest,
+  TimerOut
 }

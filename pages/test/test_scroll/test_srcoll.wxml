@@ -1,0 +1,15 @@
+<!--pages/test/test_scroll/test_srcoll.wxml-->
+<view class="root">
+
+  <view class="lable">
+    头部View
+  </view>
+  <view class="content">
+    <view class="scroll">
+    <view class="item" wx:for="123456"> {{item}}</view>
+    </view>
+  </view>
+  <view class="lable">
+    尾部View
+  </view>
+</view>
