@@ -1,1 +1,11 @@
 /* pages/test_cantacts_list/test_cantacts_list.wxss */
+.parent{
+  background-color: orchid;
+  margin: 20rpx;
+  height: 100rpx;
+}
+
+.child{
+  background-color: orange;
+  height: 50rpx;
+}

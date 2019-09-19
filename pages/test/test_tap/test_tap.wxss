@@ -1,0 +1,19 @@
+/* pages/test/test_tap/test_tap.wxss */
+
+.parent{
+  width: 50vw;
+  height: 50vh;
+  background-color: orchid;
+}
+
+.child{
+  width: 50%;
+  height: 50%;
+  background-color: orange;
+}
+
+.dib-baseline {
+  display: inline-block; width: 150px; height: 150px;
+  border: 1px solid #cad5eb; background-color: #f0f3f9;
+  vertical-align: top;
+}

@@ -1,0 +1,9 @@
+<!--pages/test/test_tap/test_tap.wxml-->
+<!-- <view class="parent" bindtap="onClick">
+  <view class="child" data-id="YM">
+    {{user.name}}:{{user.age}}
+  </view>
+</view> -->
+
+<view class="dib-baseline"></view>
+<view class="dib-baseline">x-baseline</view>

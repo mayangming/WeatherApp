@@ -1,2 +1,11 @@
-<!--pages/test_cantacts_list/test_cantacts_list.wxml-->
-<text>pages/test_cantacts_list/test_cantacts_list.wxml</text>
+<movable-area style="height: 100vh;width: 100vw;background: red;">
+
+  <!--粉色任意方向拖动-->
+  <movable-view direction="all" style="height: 100px; width: 100px; background:pink ;">
+  </movable-view>
+
+  <!--蓝色属性direction="horizontal"只能横向拖动-->
+  <movable-view direction="horizontal" style="height: 50px; width: 50px; background: blue;">
+  </movable-view>
+
+</movable-area>

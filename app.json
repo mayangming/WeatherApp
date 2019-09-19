@@ -12,7 +12,8 @@
     "pages/test/test_sticky/test_sticky",
     "pages/test/test_obj/test_obj",
     "pages/test/test_margin_collapsing/test_margin_collapsing",
-    "pages/test/test_scroll/test_srcoll"
+    "pages/test/test_scroll/test_srcoll",
+    "pages/test/test_tap/test_tap"
   ],
   "window": {
     "backgroundTextStyle": "dark",
